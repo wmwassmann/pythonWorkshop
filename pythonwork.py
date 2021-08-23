@@ -1,4 +1,4 @@
-print('hello world')
+# print('hello world')
 
 # Booleans, Numbers, Int, Strings, Tuples, Lists (Array), Dictionary (Object),
 #  {} Bye {} No {brackets}
@@ -72,16 +72,34 @@ def addFunction(numOne, numTwo):
 
 add = addFunction(10, 191)
 
-print(add)
+# print(add)
 
 
 # ALGO ONE print 1-255
 
 
-for number in range(1, 256):
-    print(number)
+# for number in range(1, 256):
+    # print(number)
+
+# ALGO TWO print every other number from 1-255
+
+# for number in range(1, 256):
+#     if number % 2!=0:
+        # print(number)
+
+# This test is to see if I can make a function that counts
+
+num = input('Enter a number: ')
+direction = input('Count \'up\' or count \'down\': ')
 
 
-for number in range(1, 256):
-    if number % 2!=0:
-        print(number)
+
+def counter(direction, num):
+        if direction == 'up':           
+            return int(num) + 1
+        else:
+           return int(num) - 1
+
+
+print(counter(direction, num))
+
